@@ -56,3 +56,19 @@ REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'davidGlobal'@'%';
 # Sakila
 # 다양한 문법
 # 실제 사이트에서 데이터 수집 + MySqL 저장
+
+USE sakila;
+
+SELECT * FROM film LIMIT 10;
+SELECT COUNT(*) FROM film;
+
+#경쟁사 사이트 크롤링 : 상품개수
+SELECT COUNT(*) FROM category;
+
+SELECT
+	customer_id,
+    SUM(amount) AS total_revenue
+FROM payment
+GROUP BY customer_id
+ORDER BY total_revenue DESC
+LIMIT 10;
