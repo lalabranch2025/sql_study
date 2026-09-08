@@ -79,3 +79,7 @@ WHERE name LIKE "D%"; # % => 0개 혹은 그 이상의 존재 정의 D로만 시
 
 SELECT * FROM students
 WHERE name LIKE "%D%"; # %0개 이상 D존재 %0개 이상 찾아와람
+
+# 앞으로의 실습은 Sakila활용 BI에서도 활용
+# 미국 DVD영화 렌탈 서비스를 진행했던 실제 기업의 DB를 벤치마킹해서 만든 예제 샘플 데이터
+# 현재 우리가 해당 기업, Sakila에 신규 입사한 마케터라면?!
